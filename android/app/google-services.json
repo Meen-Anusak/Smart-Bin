@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "701845212883",
+    "firebase_url": "https://smartbin-9595e.firebaseio.com",
+    "project_id": "smartbin-9595e",
+    "storage_bucket": "smartbin-9595e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701845212883:android:bfdff7fe7b7764ce788e26",
+        "android_client_info": {
+          "package_name": "com.meenanusak.smartbin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701845212883-ies9pegf042p2fal9pmpqhemiagabdfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXgtNNXyGIUQagDVr3lDF35MWJ5E5L0QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701845212883-ies9pegf042p2fal9pmpqhemiagabdfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
