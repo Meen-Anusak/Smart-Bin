@@ -28,7 +28,7 @@ class _Bin1State extends State<Bin1> {
           values.forEach((key,value){
             print(value['value']);
             setState(() {
-              dataBin = value['value'];
+            dataBin = value['value'];
             });
           });
         },
@@ -108,7 +108,7 @@ class _Bin1State extends State<Bin1> {
     @override
     void initState() {
       super.initState();
-      readData();
+      readData().asStream();
       seriesList = _createRandomData();
     }
   
