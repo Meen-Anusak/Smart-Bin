@@ -14,7 +14,6 @@ class _Bin1State extends State<Bin1> {
   FirebaseDatabase firebaseDatabase = FirebaseDatabase.instance;
 
   void readData() async {
-    print('readData work!');
 
     DatabaseReference databaseReference =
         firebaseDatabase.reference().child("BIN1");
