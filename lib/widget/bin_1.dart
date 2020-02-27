@@ -10,7 +10,7 @@ class Bin1 extends StatefulWidget {
 }
 
 class _Bin1State extends State<Bin1> {
-  double dataBin = 0;
+  int dataBin = 0;
   //////// firebase ////////////
 
   Future<void> readData() async {
