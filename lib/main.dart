@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartbin/screens/home.dart';
 
+
 void main() {
   runApp(MyApp());
 }
