@@ -26,8 +26,6 @@ class _Bin1State extends State<Bin1> {
           });
         });
     });
-    
-   
   }
 
   //////////// chast ////////////

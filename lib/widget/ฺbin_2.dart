@@ -9,31 +9,20 @@ class Bin2 extends StatefulWidget {
 }
 
 class _Bin2State extends State<Bin2> {
-    int dataBin;
+  int dataBin;
   //////// firebase ////////////
   FirebaseDatabase firebaseDatabase = FirebaseDatabase.instance;
-
-  void readData() async {
-    print('readData work!');
-
-    DatabaseReference databaseReference =
-        firebaseDatabase.reference().child("BIN2");
-    await databaseReference.once().then(
-      (DataSnapshot dataSnapshot) {
-        // print("Data = ${dataSnapshot.value}");
-        // dataBin = dataSnapshot.value;
-        Map<dynamic,dynamic> values = dataSnapshot.value;
-        values.forEach((key,value){
-          print(value['value']);
-          setState(() {
-            dataBin = value['value'];
-          });
+  Future<void> readData() async {
+    firebaseDatabase.reference().child("BIN2").onValue.listen((Event data) {
+      Map<dynamic, dynamic> values = data.snapshot.value;
+      values.forEach((key, value) {
+        print(value['value']);
+        setState(() {
+          dataBin = value['value'];
         });
-        
-      },
-    );
+      });
+    });
   }
-
 
   //////////// chast ////////////
   List<charts.Series> seriesList;
@@ -123,7 +112,7 @@ class _Bin2State extends State<Bin2> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   Container(
-                    margin:  EdgeInsets.only(top: 30.0),
+                    margin: EdgeInsets.only(top: 30.0),
                     child: textbin2(),
                   ),
                   Container(

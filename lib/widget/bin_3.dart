@@ -9,30 +9,21 @@ class Bin3 extends StatefulWidget {
 }
 
 class _Bin3State extends State<Bin3> {
-    int dataBin;
+  int dataBin;
   //////// firebase ////////////
   FirebaseDatabase firebaseDatabase = FirebaseDatabase.instance;
-
-  void readData() async {
-    print('readData work!');
-
-    DatabaseReference databaseReference =
-        firebaseDatabase.reference().child("BIN3");
-    await databaseReference.once().then(
-      (DataSnapshot dataSnapshot) {
-        // print("Data = ${dataSnapshot.value}");
-        // dataBin = dataSnapshot.value;
-        Map<dynamic,dynamic> values = dataSnapshot.value;
-        values.forEach((key,value){
-          print(value['value']);
-          setState(() {
-            dataBin = value['value'];
-          });
+  Future<void> readData() async {
+    firebaseDatabase.reference().child("BIN3").onValue.listen((Event data) {
+      Map<dynamic, dynamic> values = data.snapshot.value;
+      values.forEach((key, value) {
+        print(value['value']);
+        setState(() {
+          dataBin = value['value'];
         });
-        
-      },
-    );
+      });
+    });
   }
+
   //////////// chast ////////////
   List<charts.Series> seriesList;
   static List<charts.Series<Trash, String>> _createRandomData() {
@@ -121,7 +112,7 @@ class _Bin3State extends State<Bin3> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   Container(
-                    margin:  EdgeInsets.only(top: 30.0),
+                    margin: EdgeInsets.only(top: 30.0),
                     child: textbin3(),
                   ),
                   Container(
