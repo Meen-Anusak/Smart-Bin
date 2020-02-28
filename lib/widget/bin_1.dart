@@ -12,26 +12,22 @@ class Bin1 extends StatefulWidget {
 class _Bin1State extends State<Bin1> {
   int dataBin = 0;
   //////// firebase ////////////
-
+  FirebaseDatabase firebaseDatabase = FirebaseDatabase.instance;
   Future<void> readData() async {
-    FirebaseDatabase firebaseDatabase = FirebaseDatabase.instance;
-    DatabaseReference databaseReference =
-        firebaseDatabase.reference().child("BIN1");
-    await databaseReference.once().then(
-      (DataSnapshot dataSnapshot) {
-        // print("Data = ${dataSnapshot.value}");
-        // dataBin = dataSnapshot.value;
-        Map<dynamic, dynamic> values = dataSnapshot.value;
-        values.forEach(
-          (key, value) {
-            print(value['value']);
-            setState(() {
-              dataBin = value['value'];
-            });
-          },
-        );
-      },
-    );
+   firebaseDatabase.reference().child("BIN1").onValue.listen((Event data) {
+          print("user = " + data.snapshot.value.toString());
+         var value = data.snapshot.value.toString();
+         print(value);
+          Map<dynamic,dynamic> values = data.snapshot.value;
+        values.forEach((key,value){
+          print(value['value']);
+          setState(() {
+            dataBin = value['value'];
+          });
+        });
+    });
+    
+   
   }
 
   //////////// chast ////////////
