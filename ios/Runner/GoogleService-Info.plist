@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>701845212883-0i2uggbs5s3jbgvhflavfikpk8da8iu9.apps.googleusercontent.com</string>
+	<string>664430055660-6kq3rr91bbo0ak5njpn7i59qij6jkmlq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.701845212883-0i2uggbs5s3jbgvhflavfikpk8da8iu9</string>
+	<string>com.googleusercontent.apps.664430055660-6kq3rr91bbo0ak5njpn7i59qij6jkmlq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCsDE5LY8jcF9xF2Z5xmiAkHAU3b4BUcQ0</string>
+	<string>AIzaSyDJ67r5tf5Sy8U1BwdDHoyjPBLpIbbRG88</string>
 	<key>GCM_SENDER_ID</key>
-	<string>701845212883</string>
+	<string>664430055660</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.meenanusak.smartbin</string>
 	<key>PROJECT_ID</key>
-	<string>smartbin-9595e</string>
+	<string>smartbin-2d834</string>
 	<key>STORAGE_BUCKET</key>
-	<string>smartbin-9595e.appspot.com</string>
+	<string>smartbin-2d834.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:701845212883:ios:479f27370fc9afb3788e26</string>
+	<string>1:664430055660:ios:dad1dc1989c2a754a915c9</string>
 	<key>DATABASE_URL</key>
-	<string>https://smartbin-9595e.firebaseio.com</string>
+	<string>https://smartbin-2d834.firebaseio.com</string>
 </dict>
 </plist>
