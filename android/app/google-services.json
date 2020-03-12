@@ -1,35 +1,42 @@
 {
   "project_info": {
-    "project_number": "701845212883",
-    "firebase_url": "https://smartbin-9595e.firebaseio.com",
-    "project_id": "smartbin-9595e",
-    "storage_bucket": "smartbin-9595e.appspot.com"
+    "project_number": "664430055660",
+    "firebase_url": "https://smartbin-2d834.firebaseio.com",
+    "project_id": "smartbin-2d834",
+    "storage_bucket": "smartbin-2d834.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:701845212883:android:bfdff7fe7b7764ce788e26",
+        "mobilesdk_app_id": "1:664430055660:android:3791cbb0345e9ff7a915c9",
         "android_client_info": {
           "package_name": "com.meenanusak.smartbin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "701845212883-ies9pegf042p2fal9pmpqhemiagabdfr.apps.googleusercontent.com",
+          "client_id": "664430055660-p6o9id16msigkuqm188upiblpj6i5gf0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCXgtNNXyGIUQagDVr3lDF35MWJ5E5L0QY"
+          "current_key": "AIzaSyBHLTWJMCxsP99S5GaswY8c6jgitGhfmHs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "701845212883-ies9pegf042p2fal9pmpqhemiagabdfr.apps.googleusercontent.com",
+              "client_id": "664430055660-p6o9id16msigkuqm188upiblpj6i5gf0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "664430055660-6kq3rr91bbo0ak5njpn7i59qij6jkmlq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meenanusak.smartbin"
+              }
             }
           ]
         }
