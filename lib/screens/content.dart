@@ -1,8 +1,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:smartbin/widget/%E0%B8%BAbin_2.dart';
 import 'package:smartbin/widget/bin_1.dart';
+import 'package:smartbin/widget/bin_2.dart';
 import 'package:smartbin/widget/bin_3.dart';
 import 'package:smartbin/widget/charts.dart';
 import 'home.dart';
